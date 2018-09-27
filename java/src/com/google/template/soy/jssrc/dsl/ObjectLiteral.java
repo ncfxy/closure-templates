@@ -58,7 +58,9 @@ abstract class ObjectLiteral extends Expression {
       if (i > 0) {
         ctx.append(", ");
       }
-      ctx.appendOutputExpression(keys().get(i))
+      ctx.append("\'").
+              appendOutputExpression(keys().get(i))
+              .append("\'")
           .append(": ")
           .appendOutputExpression(values().get(i));
     }

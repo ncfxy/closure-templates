@@ -265,7 +265,8 @@ final class NullSafeAccumulator {
 
     @Override
     ChainAccess toChainAccess(boolean nullSafe) {
-      return new Dot(fieldName(), nullSafe);
+        return new Bracket(Expression.stringLiteral(fieldName()), nullSafe);
+//      return new Dot(fieldName(), nullSafe);
     }
   }
 

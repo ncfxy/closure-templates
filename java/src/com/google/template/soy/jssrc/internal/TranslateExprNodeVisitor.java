@@ -195,7 +195,7 @@ public class TranslateExprNodeVisitor extends AbstractReturningExprNodeVisitor<E
     } else if (varDefn.kind() == VarDefn.Kind.STATE) {
       source = STATE;
     }
-    return source.dotAccess(paramName);
+    return source.bracketAccess(Expression.stringLiteral(paramName));
   }
 
   @Override

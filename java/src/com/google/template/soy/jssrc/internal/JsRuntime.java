@@ -40,10 +40,10 @@ public final class JsRuntime {
   private static final GoogRequire GOOG_ASSERTS = GoogRequire.create("goog.asserts");
   private static final GoogRequire GOOG_STRING = GoogRequire.create("goog.string");
 
-  private static final GoogRequire SOY = GoogRequire.create("soy");
-  private static final GoogRequire SOY_MAP = GoogRequire.create("soy.map");
-  private static final GoogRequire SOY_NEWMAPS = GoogRequire.create("soy.newmaps");
-  private static final GoogRequire SOY_ASSERTS = GoogRequire.create("soy.asserts");
+  private static final GoogRequire SOY = GoogRequire.create("wap.soy");
+  private static final GoogRequire SOY_MAP = GoogRequire.create("wap.soy.map");
+  private static final GoogRequire SOY_NEWMAPS = GoogRequire.create("wap.soy.newmaps");
+  private static final GoogRequire SOY_ASSERTS = GoogRequire.create("wap.soy.asserts");
 
   private static final GoogRequire XID_REQUIRE = GoogRequire.create("xid");
 

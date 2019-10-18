@@ -106,7 +106,7 @@ public abstract class BasicEscapeDirective
   @Override
   public JsExpr applyForJsSrc(JsExpr value, List<JsExpr> args) {
     return new JsExpr(
-        "soy.$$" + name.substring(1) + "(" + value.getText() + ")", Integer.MAX_VALUE);
+        "wap.soy.$$" + name.substring(1) + "(" + value.getText() + ")", Integer.MAX_VALUE);
   }
 
   @Override
